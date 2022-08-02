@@ -13,7 +13,7 @@
 <body>
 <h1>karyawan tokombah</h1>
 <a href="tabel.php"><h1>Absen</h1></a>
-<a href="#"><h1>daftar karyawan</h1></a>
+<a href="daftar-karyawan.php"><h1>daftar karyawan</h1></a>
  
 </body>
 </html>

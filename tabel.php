@@ -34,6 +34,6 @@
             <th colspan="3"><button type="submit" value="simpan"> SIMPAN</button> <input type="reset" value="reset"> </th>
         </tr>
     </table>
-    
+   </form> 
 </body>
 </html>

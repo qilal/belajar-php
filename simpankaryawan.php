@@ -7,7 +7,7 @@ $nama  =$_POST['nama'];
 $alamat =$_POST['alamat'];
 $divisi=$_POST['divisi'];
 $shift=$_POST['shift'];
-$mysqli= "INSERT INTO karyawan VALUES ('$nama', '$alamat', '$divisi', '$shift')";
+$mysqli= "INSERT INTO karyawan (nama,alamat,divisi,shift) VALUES ('$nama', '$alamat', '$divisi', '$shift')";
      mysqli_query($conn, $mysqli);
 
      $result = mysqli_affected_rows($conn);
