@@ -6,6 +6,7 @@ $alamat = $_POST ['alamat'];
 $divisi = $_POST ['divisi'];
 $shift = $_POST ['shift'];
 
-mysqli_query($conn, "UPDATE karyawan SET nama='$nama', alamat='$alamat', divisi='$divisi', shift='$shift' WHERE NIK='$NIK'");
+mysqli_query($conn, "UPDATE karyawan SET nama='$nama', alamat='$alamat', divisi='$divisi', shift='$shift' WHERE NIK='$NIK'"
+);
 header("location:daftar-karyawan.php");
 ?>

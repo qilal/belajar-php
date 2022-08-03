@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="daftar-karyawan.php">BACK</a>
     <?php
      include 'conn-db-web.php';
      $NIK =  $_GET['NIK'];
@@ -32,9 +33,9 @@
         </tr>
             <th>shift</th> <td>:</td> 
             <td>
-                <input type="radio" name="shift" <?= $post ['shift'] === 'pagi' ? 'checked': '' ?>value="pagi">pagi
-                <input type="radio" name="shift" <?= $post ['shift'] === 'siang' ? 'checked': '' ?> value="siang">siang
-                <input type="radio" name="shift" <?= $post ['shift'] === 'malam' ? 'checked': '' ?>value="malam">malam
+                <input type="radio" name="shift" <?= $post['shift'] === 'pagi' ? 'checked': '' ?> >pagi
+                <input type="radio" name="shift" <?= $post['shift'] === 'siang' ? 'checked': '' ?> >siang
+                <input type="radio" name="shift" <?= $post['shift'] === 'malam' ? 'checked': '' ?> >malam
             </td>
         <tr>
             <th colspan="3"><button type="submit" value="simpan"> SIMPAN</button> <input type="reset" value="reset"> </th>
