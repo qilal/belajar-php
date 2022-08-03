@@ -9,14 +9,14 @@
 <body>
     <?php
      include 'conn-db-web.php';
-     $NIK =  $_GET['NIK']
-     $data = mysqli_query($conn, "SELECT * FROM karywan where NIK='$NIK'");
+     $NIK =  $_GET['NIK'];
+     $data = mysqli_query($conn, "SELECT * FROM karyawan WHERE NIK='$NIK'");
     while ($post = mysqli_fetch_array($data)){
     ?>
     <form action="update.php" method="post">
         <table border="1">
         <tr>
-            <th>NAMA</th> <td>:</td> <td><input type="text" name="nama" velue="<?= $post ['nama']; ?>"></td>
+            <th>NAMA</th> <td>:</td> <td><input type="text" name="nama" velue="<?= $post['nama']; ?>"></td>
         </tr>
 
         <tr>
@@ -26,8 +26,8 @@
         <tr>
             <th>divisi</th> <td>:</td> 
             <td><select name="divisi" >
-             <option value="kasir" <?= $data['divisi'] === 'kasir' ? 'selected' : '' ?>>kasir</option> 
-             <option value="gudang">gudang</option> 
+             <option value="kasir" <?= $post['divisi'] === 'kasir' ? 'selected' : '' ?>>kasir</option> 
+             <option value="gudang" <?= $post['divisi'] === 'gudang' ? 'selected' : '' ?>>gudang</option> 
         </select></td> 
         </tr>
             <th>shift</th> <td>:</td> 
