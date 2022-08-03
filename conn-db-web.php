@@ -5,4 +5,4 @@ if($conn -> connect_errno){
 } else {
     echo "terhubung";
 }
-?>
+?> 

@@ -31,8 +31,8 @@
             <td><?= $post['divisi']?></td>
             <td><?= $post['shift']?></td>
             <td>
-                <a href="hapus.php?id=<?= $post['NIK']; ?>">HAPUS </a> 
-                <a href="edit.php?id=<?= $post['NIK']; ?>">EDIT</a>
+                <a href="hapus.php?NIK=<?= $post['NIK']; ?>">HAPUS </a> 
+                <a href="edit.php?NIK=<?= $post['NIK']; ?>">EDIT</a>
             </td>
 
         </tr>
