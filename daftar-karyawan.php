@@ -14,6 +14,7 @@
         <th>alamat</th> 
         <th>divisi</th> 
         <th>shift</th>
+        <th>seting</th>
     </tr>
     <?php
      include "conn-db-web.php";
@@ -21,14 +22,19 @@
 
     while ($post = mysqli_fetch_array($data)) {
          echo "<pre>";
-        <!-- var_dump($post); -->
+        //   var_dump($post); 
         ?>
         <tr>
-            <td><?$post['NIK']?></td>
-            <td><?$post['nama']?></td>
-            <td><?$post['alamat']?></td>
-            <td><?$post['divisi']?></td>
-            <td><?$post['shift']?></td>
+            <td><?= $post['NIK']?></td>
+            <td><?= $post['nama']?></td>
+            <td><?= $post['alamat']?></td>
+            <td><?= $post['divisi']?></td>
+            <td><?= $post['shift']?></td>
+            <td>
+                <a href="hapus.php?id=<?= $post['NIK']; ?>">HAPUS </a> 
+                <a href="edit.php?id=<?= $post['NIK']; ?>">EDIT</a>
+            </td>
+
         </tr>
         <?php
         }
